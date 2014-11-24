@@ -51,8 +51,15 @@ public class ScannerTexte {
 		for (int i = 0; i <= 25; i++) {
 			alphabet[i] = letr;
 			letr++;
-			System.out.println(alphabet[i]);
-		}	
+			//System.out.println(alphabet[i]);
+		}
+
+		//Tableau de nombres
+		int nombres[] = new int[50];
+		for (int i = 0; i <= 49; i++) {
+			nombres[i] = i+1;
+			//System.out.println(nombres[i]);
+		}
 
 		while (scan.hasNextLine()) {
 			String line = scan.nextLine();
@@ -67,15 +74,15 @@ public class ScannerTexte {
 				//				System.out.println(line);
 				Container.builEndVerList(line);
 			}
-			
+
 			/*for (int nbre = 1; nbre <= 50; nbre++) {
 				if (nbre == line.length()) {
 
 				}
 			}*/
-			
+
 			//Méthode par switch
-			
+
 			switch (line.charAt(0)) {
 			case 'a':
 				nbreDeMotsa++;
@@ -97,6 +104,10 @@ public class ScannerTexte {
 				nbreDeMotse++;
 				Container.buildPremiereLettreList("e", nbreDeMotse);
 				break;
+				/*case 'é':
+				nbreDeMotse++;
+				Container.buildPremiereLettreList("e", nbreDeMotse);
+				break;*/
 			case 'f':
 				nbreDeMotsf++;
 				Container.buildPremiereLettreList("f", nbreDeMotsf);
@@ -182,7 +193,6 @@ public class ScannerTexte {
 				Container.buildPremiereLettreList("z", nbreDeMotsz);
 				break;				
 			default :
-				
 			}
 			
 		}
