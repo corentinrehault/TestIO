@@ -25,6 +25,8 @@ public class ScannerTexte {
 	 */
 	public static void scanTexte(String monUrl, String charSet) throws MalformedURLException, IOException {
 
+		long start = System.currentTimeMillis();
+		
 		Scanner scan = new Scanner(new URL(monUrl).openStream(), charSet);
 
 		int nbreDeMotsa = 0;
@@ -335,6 +337,11 @@ public class ScannerTexte {
 
 		}
 
+		long stop = System.currentTimeMillis();
+		long time = stop - start;
+		
+		System.out.println("time : " + time);
+		
 		System.out.println(titre);
 		System.out.println("nombre de mots en : " + Container.listPremiereLettre);
 		System.out.println("longueur des mots : " + Container.listNbreLettres);
