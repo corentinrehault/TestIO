@@ -6,8 +6,8 @@ package fr.main;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import fr.ScannerTexte;
 import fr.service.Ecriture;
+import fr.service.ScannerTexte;
 
 /**
  * @author dao303
