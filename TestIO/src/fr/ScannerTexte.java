@@ -82,7 +82,7 @@ public class ScannerTexte {
 		int nbreDeLettres24 = 0;
 		int nbreDeLettres25 = 0;
 
-		//Tableau alphabÃ©tique
+		//Tableau alphabétique
 		char letr = 'a';
 		char alphabet[] = new char[26]; 
 		for (int i = 0; i <= 25; i++) {
@@ -110,10 +110,10 @@ public class ScannerTexte {
 				//				System.err.println(line); 
 				Container.buildGeneralList(line);
 
-				//MÃ©thode par switch pour l'alphabet
+				//Méthode par switch pour l'alphabet
 
 				switch (line.charAt(0)) {
-				case 'a': case 'A': case 'Ã ': case 'Ã¢':
+				case 'a': case 'A': case 'à': case 'â':
 					nbreDeMotsa++;
 					Container.buildPremiereLettreList("a", nbreDeMotsa);
 					break;
@@ -121,7 +121,7 @@ public class ScannerTexte {
 					nbreDeMotsb++;
 					Container.buildPremiereLettreList("b", nbreDeMotsb);
 					break;
-				case 'c': case 'C': case 'Ã§':
+				case 'c': case 'C': case 'ç':
 					nbreDeMotsc++;
 					Container.buildPremiereLettreList("c", nbreDeMotsc);
 					break;
@@ -129,7 +129,7 @@ public class ScannerTexte {
 					nbreDeMotsd++;
 					Container.buildPremiereLettreList("d", nbreDeMotsd);
 					break;
-				case 'e': case 'E': case 'Ã©': case 'Ã¨': case 'Ãª':
+				case 'e': case 'E': case 'é': case 'è': case 'ê':
 					nbreDeMotse++;
 					Container.buildPremiereLettreList("e", nbreDeMotse);
 					break;
@@ -145,7 +145,7 @@ public class ScannerTexte {
 					nbreDeMotsh++;
 					Container.buildPremiereLettreList("h", nbreDeMotsh);
 					break;
-				case 'i': case 'I': case 'Ã®':
+				case 'i': case 'I': case 'î':
 					nbreDeMotsi++;
 					Container.buildPremiereLettreList("i", nbreDeMotsi);
 					break;
@@ -169,7 +169,7 @@ public class ScannerTexte {
 					nbreDeMotsn++;
 					Container.buildPremiereLettreList("n", nbreDeMotsn);
 					break;
-				case 'o': case 'O': case 'Ã´':
+				case 'o': case 'O': case 'ô':
 					nbreDeMotso++;
 					Container.buildPremiereLettreList("o", nbreDeMotso);
 					break;
@@ -222,7 +222,7 @@ public class ScannerTexte {
 					break;
 				}
 
-				//MÃ©thode par switch pour le nombre de lettres
+				//Méthode par switch pour le nombre de lettres
 
 				switch (line.length()) {
 				case 1:
@@ -345,7 +345,7 @@ public class ScannerTexte {
 		System.out.println(titre);
 		System.out.println("nombre de mots en : " + Container.listPremiereLettre);
 		System.out.println("longueur des mots : " + Container.listNbreLettres);
-		System.out.println("list recupÃ©rÃ©e " + Container.listDeMot.size());
+		System.out.println("list recupérée " + Container.listDeMot.size());
 		System.out.println("nbre mot ver" + Container.listVer.size());
 		scan.close();
 	}
