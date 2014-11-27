@@ -84,7 +84,7 @@ public class ScannerTexte {
 		int nbreDeLettres24 = 0;
 		int nbreDeLettres25 = 0;
 
-		//Tableau alphabï¿½tique
+		//Tableau alphabÃ©tique
 		char letr = 'a';
 		char alphabet[] = new char[26]; 
 		for (int i = 0; i <= 25; i++) {
@@ -112,10 +112,10 @@ public class ScannerTexte {
 				//				System.err.println(line); 
 				Conteneur.buildGeneralList(line);
 
-				//Mï¿½thode par switch pour l'alphabet
+				//MÃ©thode par switch pour l'alphabet
 
 				switch (line.charAt(0)) {
-				case 'a': case 'A': case 'à': case 'â':
+				case 'a': case 'A': case 'Ã ': case 'Ã¢':
 					nbreDeMotsa++;
 					Conteneur.buildPremiereLettreList("a", nbreDeMotsa);
 					break;
@@ -123,7 +123,7 @@ public class ScannerTexte {
 					nbreDeMotsb++;
 					Conteneur.buildPremiereLettreList("b", nbreDeMotsb);
 					break;
-				case 'c': case 'C': case 'ç':
+				case 'c': case 'C': case 'Ã§':
 					nbreDeMotsc++;
 					Conteneur.buildPremiereLettreList("c", nbreDeMotsc);
 					break;
@@ -131,7 +131,7 @@ public class ScannerTexte {
 					nbreDeMotsd++;
 					Conteneur.buildPremiereLettreList("d", nbreDeMotsd);
 					break;
-				case 'e': case 'E': case 'é': case 'è': case 'ê':
+				case 'e': case 'E': case 'Ã©': case 'Ã¨': case 'Ãª':
 					nbreDeMotse++;
 					Conteneur.buildPremiereLettreList("e", nbreDeMotse);
 					break;
@@ -147,7 +147,7 @@ public class ScannerTexte {
 					nbreDeMotsh++;
 					Conteneur.buildPremiereLettreList("h", nbreDeMotsh);
 					break;
-				case 'i': case 'I': case 'î':
+				case 'i': case 'I': case 'Ã®':
 					nbreDeMotsi++;
 					Conteneur.buildPremiereLettreList("i", nbreDeMotsi);
 					break;
@@ -171,7 +171,7 @@ public class ScannerTexte {
 					nbreDeMotsn++;
 					Conteneur.buildPremiereLettreList("n", nbreDeMotsn);
 					break;
-				case 'o': case 'O': case 'ô':
+				case 'o': case 'O': case 'Ã´':
 					nbreDeMotso++;
 					Conteneur.buildPremiereLettreList("o", nbreDeMotso);
 					break;
@@ -224,7 +224,7 @@ public class ScannerTexte {
 					break;
 				}
 
-				//Mï¿½thode par switch pour le nombre de lettres
+				//MÃ©thode par switch pour le nombre de lettres
 
 				switch (line.length()) {
 				case 1:
