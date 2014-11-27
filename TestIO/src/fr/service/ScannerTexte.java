@@ -347,7 +347,7 @@ public class ScannerTexte {
 		System.out.println(titre);
 		System.out.println("nombre de mots en : " + Conteneur.listPremiereLettre);
 		System.out.println("longueur des mots : " + Conteneur.listNbreLettres);
-		System.out.println("list recup�r�e " + Conteneur.listDeMot.size());
+		System.out.println("list recupérée " + Conteneur.listDeMot.size());
 		System.out.println("nbre mot ver" + Conteneur.listVer.size());
 		scan.close();
 	}
